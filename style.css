@@ -1,29 +1,183 @@
-body{
-    margin: 0px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header{
-    width: 100%;
+body {
+    font-family: sans-serif;
+    color: #000;
+    background-color: rgb(244, 244, 244);
+
+    overflow: hidden    ;
 }
-.nav{
-    width: 100%;
-    background-color: yellow;
-    padding: 2px;
+
+.container {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
 }
-div{
-    width: 50%;
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00000000;
 }
 #blog-title{
-    width: 40%;
+    margin: 10px 20px;
 }
-ul{
+header .nav {
     display: flex;
-    
-    padding: 0px;
-    margin: 0px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
 }
-li{
+.connect{
+    margin: 10px 20px;
+}
+.connect a {
+    text-decoration: none;
+    padding: 10px 10px;
+      color: #fff;
+    background: rgb(0, 0, 0);
+    border-radius: 20px;
+    margin: 0 10px;
+}
+
+main {
+    display: flex;
+    flex: 1 1 50%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; 
+    width: 100vw;
+    height: 100vh;
+}
+
+.main {
+    height: auto;
+    width: 100vw;
+    position: relatives;
+    line-height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    z-index: -1;
+
+    
+}
+
+.main h1{
+    padding: 10px;
+}
+
+main .name {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    position: absolute;
+    top: 100px;
+    padding: 10px;
+    flex-direction: column;
+    font-size: xx-large;
+}
+
+main .name #name-p1{
+    position: relative;
+    margin: 10px;
+    font-size: 6.25rem;
+    padding: 10px;
+}
+
+main .name #name-p2{
+    position: relative;
+    left: 50px;
+    margin: 25px;
+    font-size: 7.5rem;
+    padding: 10px;
+}
+
+main .name #name-p3{
+    position: relative;
+    left: 0px;
+    margin: 25px 0;
+    font-size: 130px;
+    padding: 10px;
+}
+
+main .profession {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+margin-right: 50px;
+font-size: xx-large;
+line-height: 50px;
+padding-bottom: 50px;
+
+}
+
+#profession-p1{
+    font-size: 45px;
+    z-index: -1;
+}
+
+#profession-p2{
+    font-size: 60px;
+    z-index: -2;    
+}
+
+.pp {
+    position: absolute;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    top: 100px;
+
+    
+}
+
+.pp img {
+    width: 55rem;
+    height: auto;
+    position: absolute;
+
+}
+
+#blog-title {
+    width: auto;
+    margin: 0 10px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 2px;
+}
+
+li {
     list-style: none;
+    padding: 5px;
+    margin: 0 10px;
+}
+
+.nav li:hover {
+    background-color: #a8a8a8;
+    color: #333;
+    
+    border-radius: 20px;
 }
